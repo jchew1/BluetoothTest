@@ -126,6 +126,7 @@ public class MainActivity extends AppCompatActivity {
     public void connectToDevice(View view) {
 //        ConnectThread connection = new ConnectThread();
 //        connection.Start();
+        Log.d(TAG, "github commit test");
     }
 
     @Override
