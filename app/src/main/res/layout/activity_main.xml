@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/enable_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="enableBluetooth"
+        android:text="@string/enable"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/discover_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="discoverBtDevices"
+        android:text="@string/discover"
+        app:layout_constraintTop_toBottomOf="@id/enable_button"/>
+
+    <Button
+        android:id="@+id/paired_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getPairedDevices"
+        android:text="@string/paired_devices"
+        app:layout_constraintTop_toBottomOf="@id/discover_button"/>
+
+    <Button
+        android:id="@+id/connect_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="connectToDevice"
+        android:text="@string/connect"
+        app:layout_constraintTop_toBottomOf="@id/paired_button"/>
+
+</android.support.constraint.ConstraintLayout>
