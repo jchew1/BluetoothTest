@@ -4,4 +4,5 @@
     <string name="enable">enable</string>
     <string name="paired_devices">paired devices</string>
     <string name="connect">connect</string>
+    <string name="record">record</string>
 </resources>
